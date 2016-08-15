@@ -29,4 +29,22 @@ func main() {
 
 	}
 
+	// Keyword fallthrough dalam switch
+	// Gunanya untuk meneruskan pemeriksaan ke case selanjutnya
+	var point3 = 7
+
+	switch {
+	case point3 == 8:
+		fmt.Println("Perfect")
+	case (point3 < 8) && (point3 > 3):
+		fmt.Println("Awesome")
+		fallthrough
+	case point3 < 5:
+		fmt.Println("You need to learn more")
+	default:
+		{
+			fmt.Println("not bad")
+			fmt.Println("you need learn more")
+		}
+	}
 }
