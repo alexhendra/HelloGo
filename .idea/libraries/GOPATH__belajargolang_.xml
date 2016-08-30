@@ -4,12 +4,14 @@
       <root url="file://$PROJECT_DIR$/../mymath" />
       <root url="file://$PROJECT_DIR$/../mathapp" />
       <root url="file://$PROJECT_DIR$/../simplewebserver" />
+      <root url="file://$PROJECT_DIR$/../github.com" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="file://$PROJECT_DIR$/../mymath" />
       <root url="file://$PROJECT_DIR$/../mathapp" />
       <root url="file://$PROJECT_DIR$/../simplewebserver" />
+      <root url="file://$PROJECT_DIR$/../github.com" />
     </SOURCES>
     <excluded>
       <root url="file://$PROJECT_DIR$" />
