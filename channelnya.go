@@ -10,6 +10,9 @@ func main() {
 
 	// variable messages di deklarasikan sebagai channel
 	// formatnya : make(chan tipedatanya)
+	// Pengiriman dan penerimaan data pada channel bersifat "blocking atau synchronous"
+	// Secara default channel adalah un-buffered (tidak buffer di memory)
+
 	var messages = make(chan string)
 
 	// Closure sayHelloTo
@@ -19,19 +22,20 @@ func main() {
 		// variable data dikirimkan ke channel "messages"
 		// karena tanda panah ke kiri " <- "
 		messages <- data
+		fmt.Println("Kirim data :", data)
 	}
 
 	go sayHelloTo("Alex Hendra")
 	go sayHelloTo("Bambang Joyo")
 	go sayHelloTo("Lala Lili")
 
-	// data yg melalui channel "messages" disimpan ke variable "msg1"
+	// data yg diterima melalui channel "messages" disimpan ke variable "msg1"
 	var msg1 = <- messages
-	fmt.Println(msg1)
+	fmt.Println("Terima data :",msg1)
 
 	var msg2 = <- messages
-	fmt.Println(msg2)
+	fmt.Println("Terima data :",msg2)
 
 	var msg3 = <- messages
-	fmt.Println(msg3)
+	fmt.Println("Terima data :",msg3)
 }

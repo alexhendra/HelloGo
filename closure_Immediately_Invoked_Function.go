@@ -5,6 +5,7 @@ import "fmt"
 func main() {
 	// closure jenis Immediately-Invoked Function Expression (IIFE)
 	// dieksekusi langsung pada saat deklarasi
+	// Biasanya digunakan untuk membungkus proses yg hanya dilakukan sekali, bisa mengembalikan nilai, bisa juga tidak
 
 	var numbers = []int{2, 3, 0, 4, 3, 2, 0, 4, 2, 0, 3}
 
@@ -18,7 +19,8 @@ func main() {
 			r = append(r, e)
 		}
 		return r
-	}(3) // --> Ini adalah parameternya
+	}(3) // --> Ini adalah nilai pengisi parameternya
+
 	fmt.Println("original number :", numbers)
 	fmt.Println("filtered number :", newNumbers)
 
