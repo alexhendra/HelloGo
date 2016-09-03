@@ -40,5 +40,15 @@ func main() {
 
 	// Fungsi FindStringIndex(), method ini sama dengan FindString() hanya saja yg dikembalikan index saja
 	var idx = regex.FindStringIndex(text)
-	fmt.Printf("%v\n",idx)
+	fmt.Printf("%v\n", idx)
+
+	// Fungsi regex.ReplaceAllString() berguna untuk me-replace semua string yg
+	// memenuhi kriteria regexp dgn string lain
+	var strRep = regex.ReplaceAllString(text, "potato")
+	fmt.Println(strRep)
+
+	// Fungsi regex.Split() digunakan utk memisah string dgn pemisah adalah substring yg
+	// memenuhi kriteria regexp yg telah ditentukan
+	var strSplit = regex.Split(text, -1)
+	fmt.Printf("%#v	\n", strSplit)
 }
