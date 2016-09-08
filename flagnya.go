@@ -17,6 +17,8 @@ func main() {
 	var age = flag.Int64("age",25,"type your age")
 
 	flag.Parse()
+	// Nilai balik dari flag.String() adalah string pointer, jadi perlu di-deference terlebih
+	// dahulu agar dpt nilai asli (*name)
 	fmt.Printf("Name\t: %s\n",*name)
 	fmt.Printf("Age\t: %d\n",*age)
 
