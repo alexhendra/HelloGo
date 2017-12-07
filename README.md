@@ -1,2 +1,2 @@
 # HelloGo
-Repository untuk belajara Go Lang
+Repository untuk belajar Go Language
